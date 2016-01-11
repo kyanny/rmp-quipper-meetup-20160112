@@ -33,8 +33,7 @@ jQuery(function(){
   // initialize!
   var option = {
     speed : 10,
-    duration : 5,
-    stopImageNumber : getStopImageNumber(),
+    duration : 5
   }
   $('div.roulette').roulette(option);
 
