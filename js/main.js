@@ -1,4 +1,10 @@
 jQuery(function(){
+  $('.modal').modal('show');
+
+  $('.modal').on('hidden.bs.modal', function (e) {
+    $('.invisible').removeClass('invisible');
+  });
+
   var max = 5 * 60;
   var $stopwatch = $('button.btn-default');
   $stopwatch.text('05:00');

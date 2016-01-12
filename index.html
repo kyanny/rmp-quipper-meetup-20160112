@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <title>Quipperの魅力をルーレットで語ってみた //【RMP×Quipper】Food&Drink meetup #1</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
-    <style>img { max-width: 100%; height: 500px; }</style>
+    <style>
+     img { max-width: 100%; height: 500px; }
+     .modal-dialog { width: 100%; height: 100%; margin: 0; }
+     .modal-content { height: 100%; }
+    </style>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="http://github.hubspot.com/tether/dist/js/tether.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
@@ -12,7 +16,27 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+
+      <div class="modal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">【RMP×Quipper】Food&Drink meetup #1</h4>
+            </div>
+            <div class="modal-body">
+              <img src="img/me.png"/>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+      
+      <div class="row invisible">
         <div class="col-md-12 m-t-1">
           <h1 class="h4">
             <img src="http://www.emoji-cheat-sheet.com/graphics/emojis/congratulations.png" style="width:64px;height:64px;">
@@ -21,7 +45,7 @@
           </h1>
         </div>
       </div>
-      <div class="row">
+      <div class="row invisible">
         <div class="col-md-12 m-y-2">
           <div class="roulette_container text-md-center" >
             <div class="roulette" style="display:none;">
@@ -36,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row invisible">
         <div class="col-md-4 col-md-offset-4">
           <div class="btn_container text-md-center">
             <p>
